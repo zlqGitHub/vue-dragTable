@@ -9,7 +9,7 @@
           <th v-slldrag>code</th>
           <th v-slldrag>level</th>
         </tr>
-        <tr v-for="item of list">
+        <tr v-for="item of list" :key="item.id">
           <td>{{item.id}}</td>
           <td>{{item.name}}</td>
           <td>{{item.old}}</td>
